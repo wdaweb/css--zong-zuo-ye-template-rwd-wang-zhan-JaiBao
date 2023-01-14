@@ -1,0 +1,669 @@
+/*
+=========================================
+全局設定
+=========================================
+*/
+body {
+    font-family: "Poppins", sans-serif;
+    color: #484848;
+}
+
+small {
+    font-size: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: #484848;
+}
+
+i {
+    margin-right: 0.43rem;
+}
+
+/*
+=========================================
+通用樣式
+=========================================
+*/
+
+.separate {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.txt-weight-bold {
+    font-weight: 600;
+}
+
+.txt-weight-normal {
+    font-weight: 400;
+}
+
+/*
+=========================================
+各模塊設定
+=========================================
+*/
+
+/*表頭 
+--------------------*/
+.header-expand {
+    padding: 32px 0;
+}
+
+.header-wrap {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header-sub {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.header-contact-ul {
+    display: flex;
+}
+
+.header-contact-ul li {
+    margin: 0 .929rem;
+}
+
+.header-link {
+    margin-left: auto;
+}
+
+.header-link-ul {
+    display: flex;
+}
+
+.header-link-ul li {
+    margin: 0 .929rem;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-wrap {
+    display: flex;
+}
+
+.header-logo-link {
+    display: block;
+    margin: 0 1.3rem 0 0;
+}
+
+.header-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-description {
+    font-size: .75rem;
+    line-height: 1.5;
+}
+
+.header-main-nav {
+    margin-left: auto;
+}
+
+.header-main-nav ul {
+    display: flex;
+}
+
+.header-main-nav ul li {
+    margin: 0 .929rem;
+}
+
+.header-main-nav ul li a:hover {
+    color: #ff5a5f;
+}
+
+/* 漢堡選單按鈕 */
+.menu-toggle-wrapper {
+    height: 0;
+    overflow: hidden;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    border: 0 solid;
+}
+
+.menu-toggle i::before {
+    font-family: "Font Awesome 5 Free";
+    content: attr(data-before);
+    color: #ff5a5f;
+}
+
+/* 漢堡選單下項目預設隱藏 */
+.hamburger-contact {
+    height: 0;
+    overflow: hidden;
+}
+
+.hamburger-link {
+    height: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 940px) {
+
+    .header-sub {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .header-main {
+        display: block;
+        align-items: center;
+    }
+
+    .header-logo-wrap {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+    }
+
+    .header-logo-link {
+        display: block;
+        margin: 0 0 1.3rem 0;
+    }
+
+    .header-main-ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .header-main-nav ul {
+        display: block;
+    }
+
+    .header-main-nav ul li {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0.85rem 0
+    }
+
+    .header-title-wrap {
+        margin-bottom: 2rem;
+    }
+
+    .menu-toggle-wrapper {
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0.85rem 0;
+        height: auto;
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+
+    }
+
+    .menu-toggle span {
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #ff5a5f;
+        vertical-align: middle;
+    }
+
+
+    .hamburger-contact {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .hamburger-link {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .hamburger-contact a {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .header-main-ul.active {
+        max-height: 336px;
+    }
+
+    .hamburger-contact.active {
+        height: 160px;
+    }
+
+    .hamburger-link.active {
+        height: 160px;
+    }
+}
+
+/*主內容區塊
+--------------------*/
+.main {
+    position: relative;
+}
+
+
+/*第一區 banner大圖
+--------------------*/
+.banner-wrap {
+    height: 560px;
+}
+
+.banner-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*第二區
+--------------------*/
+.content-wrap {
+    background-color: rgb(255, 255, 255);
+    max-width: 1210px;
+    position: relative;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -5%);
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 940px) {}
+
+
+/*搜索區塊
+--------------------*/
+.aside-search {
+    padding-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.aside-search-item {
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 940px) {
+    .aside-search {
+        justify-content: center;
+    }
+
+    .aside-search-item {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/*表單樣式
+--------------------*/
+.form-input {
+    display: block;
+    height: 2.5em;
+    padding: .6em 2em .8em 1em;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #484848;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 330px;
+}
+
+.form-select {
+    display: block;
+    height: 2.5em;
+    padding: .6em 2em .8em 1em;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #484848;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    background-color: #ff5a5f;
+    color: #FFF;
+    border: 1px solid #ff5a5f;
+    cursor: pointer;
+    padding: .6rem 2rem;
+    font-family: "Playfair Display", serif;
+    font-size: .875rem;
+    font-weight: 600;
+    height: 3.1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*內容區塊
+--------------------*/
+.article-wrap {
+    margin-top: 3.75rem;
+    border: 4px solid #f5f3f1;
+    padding: 0 8.8125rem 3.85rem;
+}
+
+.article-header {
+    box-sizing: border-box;
+    padding: 3.25rem 0 2.45rem;
+}
+
+.article-title {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    box-sizing: border-box;
+    margin-bottom: 0.72rem;
+    text-align: center;
+}
+
+.article-summary {
+    display: block;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+    color: gray;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.article-content {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.75rem;
+    padding: 3.25rem 0 2.45rem;
+    margin-bottom: 0.72rem;
+}
+
+
+@media screen and (max-width: 940px) {
+    .article-wrap {
+        padding: 0 1.2rem 3.85rem;
+    }
+
+
+}
+
+/*內容子區塊
+--------------------*/
+.article-child {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+
+.article-child-item {
+    width: 31%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.article-child-title {
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 700;
+}
+
+/* 照片列表 */
+.thumbnail {
+    display: block;
+    overflow: hidden;
+    height: 362.67px;
+    margin-bottom: 1.55rem;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 940px) {
+
+    .thumbnail {
+        height: calc(362.67px * 0.8);
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .article-child {
+        display: block;
+    }
+
+    .article-child-item {
+        width: 100%;
+    }
+
+}
+
+/*輪播區域
+--------------------*/
+.aside-carousel{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.aside-carousel section{
+    font-family: "Playfair Display",serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 0  11.4rem;
+}
+
+@media screen and (max-width: 940px) {
+
+    .aside-carousel section{
+        padding: 0 1.2rem 3.85rem
+    }
+}
+
+
+
+/*最新消息  照片牆
+--------------------*/
+.news-wrap {
+    display:flex;
+    word-wrap: wrap;
+    margin-top: 6rem;
+}
+.news-post-first {
+    width: 60%;
+    margin-right: 1rem ;
+}
+.news-post-second{
+    width: 40%;
+}
+
+.news-post{
+    width: 100%;
+}
+
+.news-first-img {
+    width: 100%;
+    height: 440px;
+    margin-right:1rem ;
+    overflow: hidden;
+}
+
+.news-img-wrap{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.news-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 940px) {
+
+    .news-first-img {
+        height: calc(440px * 0.8);
+    }
+
+    .news-img-wrap{
+        height: calc(200px * 0.74);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .news-wrap {
+        display:block;
+    }
+
+    .news-post-first {
+        width: 100%;
+    }
+    .news-post-second{
+        width: 100%;
+    }
+
+    .news-first-img {
+        height: 100%;
+    }
+
+    .news-img-wrap{
+        height: 100%;
+    }
+
+}
+
+
+/*頁尾 
+--------------------*/
+.footer-expand {
+    background-color: #f5f3f1;
+}
+
+.footer-wrap {
+    padding: 0 2.5rem;
+}
+
+
+.footer-top {
+    display: flex;
+    max-width: 1210px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 6rem 0 3rem 0;
+    box-sizing: border-box;
+}
+
+.footer-item {
+    width: 30%;
+}
+
+.footer-item-title {
+    font-size: 1.25rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1.875rem;
+    box-sizing: border-box;
+}
+
+.footer-item ul {
+
+    margin-bottom: 4.15rem;
+}
+
+
+.footer-item ul li:not(:first-child) {
+    margin-top: 1.4rem;
+}
+
+.footer-item ul li a {
+    color: #ff5a5f;
+    font-size: 0.875rem;
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+    .footer-wrap {
+        padding: 0 2.5rem;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-item {
+        width: 100%;
+    }
+
+    .footer-note {
+        display: block;
+        margin-bottom: 4.75rem;
+    }
+
+}
+
+
+.grid-container {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
+}
+
+.figure img {
+    width: 100%;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+.footer-bottom span {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+/* 社交工具列 */
+.nav-social {
+    margin-bottom: 4.15rem;
+}
+
+.nav-social ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-social ul li {
+    margin-right: 1.2rem;
+}
+
+.nav-social ul li a {
+    font-size: 1.25rem;
+}
